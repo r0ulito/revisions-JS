@@ -1,4 +1,4 @@
-# Recréez la fonction Array.prototype.map() avec la signature suivante => 'myMap(arr, func)' elle doit donc prendre un array et une fonction en paramètre
+## Recréez la fonction Array.prototype.map() avec la signature suivante => 'myMap(arr, func)' elle doit donc prendre un array et une fonction en paramètre
 
 Que faire dedans ?
 
@@ -10,7 +10,7 @@ Que faire dedans ?
 
 Vous ne devez utiliser ni forEach ni aucune fonction provenant de Array.prototype (Donc toute les fonction qui s'écrivent array.func() sont interdites, sauf push, bien évidemment)
 
-# Recréez la fonction Array.prototype.filter() avec la signature suivante => 'myFilter(arr, func)' elle doit donc prendre un array et une fonction en paramètre
+## Recréez la fonction Array.prototype.filter() avec la signature suivante => 'myFilter(arr, func)' elle doit donc prendre un array et une fonction en paramètre
 
 Que faire dedans ?
 
@@ -20,9 +20,9 @@ Que faire dedans ?
 4. Push le résultat de `func` dans filteredArr SI le retour de `func` == true
 5. Return filteredArr après la fin de la boucle
 
-Vous ne devez utiliser ni forEach ni aucune fonction provenant de Array.prototype (Donc toute les fonction qui s'écrivent array.func() sont interdites)
+Vous ne devez utiliser ni forEach ni aucune fonction provenant de Array.prototype (Donc toute les fonction qui s'écrivent array.func() sont interdites, sauf push, bien évidemment)
 
-# Recréez la fonction Array.prototype.reduce() avec la signature suivante => 'myReduce(arr, func, initialValue)' elle doit donc prendre un array, une fonction et la valeur initiale en paramètre
+## Recréez la fonction Array.prototype.reduce() avec la signature suivante => 'myReduce(arr, func, initialValue)' elle doit donc prendre un array, une fonction et la valeur initiale en paramètre
 
 Que faire dedans ?
 
@@ -31,4 +31,4 @@ Que faire dedans ?
 3. Appeller `func` avec comme paramètre l'élement courant et l'accumulateur
 4. Return l'accumulateur après la fin de la boucle
 
-Vous ne devez utiliser ni forEach ni aucune fonction provenant de Array.prototype (Donc toute les fonction qui s'écrivent array.func() sont interdites)
+Vous ne devez utiliser ni forEach ni aucune fonction provenant de Array.prototype (Donc toute les fonction qui s'écrivent array.func() sont interdites, sauf push, bien évidemment)
