@@ -1,4 +1,4 @@
-## Recréez la fonction Array.prototype.map() avec la signature suivante => 'myMap(arr, func)' elle doit donc prendre un array et une fonction en paramètre
+## Recréez la fonction [Array.prototype.map()](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/map) avec la signature suivante => 'myMap(arr, func)' elle doit donc prendre un array et une fonction en paramètre
 
 Que faire dedans ?
 
@@ -10,7 +10,7 @@ Que faire dedans ?
 
 Vous ne devez utiliser ni forEach ni aucune fonction provenant de Array.prototype (Donc toute les fonction qui s'écrivent array.func() sont interdites, sauf push, bien évidemment)
 
-## Recréez la fonction Array.prototype.filter() avec la signature suivante => 'myFilter(arr, func)' elle doit donc prendre un array et une fonction en paramètre
+## Recréez la fonction [Array.prototype.filter()](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/filter) avec la signature suivante => 'myFilter(arr, func)' elle doit donc prendre un array et une fonction en paramètre
 
 Que faire dedans ?
 
@@ -22,7 +22,7 @@ Que faire dedans ?
 
 Vous ne devez utiliser ni forEach ni aucune fonction provenant de Array.prototype (Donc toute les fonction qui s'écrivent array.func() sont interdites, sauf push, bien évidemment)
 
-## Recréez la fonction Array.prototype.reduce() avec la signature suivante => 'myReduce(arr, func, initialValue)' elle doit donc prendre un array, une fonction et la valeur initiale en paramètre
+## Recréez la fonction [Array.prototype.reduce()](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce) avec la signature suivante => 'myReduce(arr, func, initialValue)' elle doit donc prendre un array, une fonction et la valeur initiale en paramètre
 
 Que faire dedans ?
 
