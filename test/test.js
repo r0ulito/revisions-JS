@@ -5,7 +5,6 @@
 // Path: test/test.js
 
 const assert = require("assert");
-const myMapChecker = require("../src/index.js").myMapChecker;
 const myMap = require("../index.js").myMap;
 
 //write a test using mocha and chai that need to check if myMap uses the map method or not
@@ -13,8 +12,27 @@ const myMap = require("../index.js").myMap;
 //write the test first, then write the function to make the test pass
 
 describe("Tests pour MyMap", () => {
-  it("Tu ne dois pas utiliser map", () => {
-    assert.equal(myMap.toString().includes("map"), false, "Tu triches! Tu utilises la méthode map!");
+  it("Tu ne dois pas utiliser de high order functions", () => {
+    assert.equal(
+      myMap.toString().includes("map"),
+      false,
+      "Tu triches! Tu utilises la méthode map!"
+    );
+    assert.equal(
+      myMap.toString().includes("forEach"),
+      false,
+      "Tu triches! Tu utilises la méthode forEach!"
+    );
+    assert.equal(
+      myMap.toString().includes("reduce"),
+      false,
+      "Je ne suis pas sur que reduce soit pertinent"
+    );
+    assert.equal(
+      myMap.toString().includes("filter"),
+      false,
+      "Filter n'est pas pertinent"
+    );
   });
 
   it("Tu dois retourner un array", () => {
@@ -34,10 +52,31 @@ describe("Tests pour MyMap", () => {
   it("Tu utilise bien la fonction fn", () => {
     // can't we just check if the function is called?
     assert.equal(
-        myMap.toString().includes("fn("),
-        true,
-        "Tu dois utiliser la fonction fn"
+      myMap.toString().includes("fn("),
+      true,
+      "Tu dois utiliser la fonction fn"
     );
+  });
+  it("Tu utilise bien une boucle for", () => {
+    assert.equal(
+      myMap.toString().includes("for"),
+      true,
+      "Tu dois utiliser une boucle for"
+    );
+  });
+  it("Privilégie l'utilisation de const et let", () => {
+    assert.equal(
+      myMap.toString().includes("var"),
+      false,
+      "Recommence en enlevant toutes les var"
+    );
+  });
 
+  it('"myMap([1, 2, 3], x => x * 2" doit retourner [2, 4, 6]', () => {
+    assert.deepEqual(
+      myMap([1, 2, 3], (x) => x * 2),
+      [2, 4, 6],
+      "Le résultat attendu n'est pas le bon"
+    );
   });
 });
